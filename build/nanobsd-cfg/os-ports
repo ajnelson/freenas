@@ -49,6 +49,7 @@ if ! is_truenas ; then
                             REVISION=${SVNREVISION}
 fi
 
+add_port benchmarks/fio OPTIONS_FILE_UNSET+=GNUPLOT
 add_port net/mDNSResponder
 add_port textproc/libxml2
 add_port devel/libffi
